@@ -21,7 +21,9 @@ Regarding the input:
 Here is an example.
 
 Formula: (-p v -q) ^ (-p v q) ^ (p v -q) ^ (p v q)
+
 Formula in Normal Conjuctive Form: {[-p,-q],[-p,q],[p,-q],[p,q]}
+
 Input:
 
 4
