@@ -28,8 +28,11 @@ Input:
 
 4
 -p -q
+
 -p q
+
 p -q
+
 p q
 
 
