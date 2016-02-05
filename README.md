@@ -27,6 +27,7 @@ Formula in Normal Conjuctive Form: {[-p,-q],[-p,q],[p,-q],[p,q]}
 Input:
 
 4
+
 -p -q
 
 -p q
