@@ -14,25 +14,28 @@
  *  Ricardo Ferreira da Silva
  * 
  */
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
 public class Main {
 	
 	// We will store the value of literals in this structure as we go along.
 	static HashMap<String,Boolean> literalMap = new HashMap<String,Boolean>();
-	public static void main(String args[])
+	public static void main(String args[]) throws IOException
 	{
 		// Main array where we will store our initial clauses.
 		ArrayList<Clause> Clauses = new ArrayList<Clause>();
-		Scanner in = new Scanner(System.in);
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		// Creating data structure.
 		System.out.println("How many clauses does your formula in the Conjuctive Normal Form have?");
-		int nClauses = in.nextInt();
-		in.nextLine();
+		int nClauses = Integer.parseInt(in.readLine());
 		System.out.println("Please introduce your clauses.");
 		System.out.println("(Input description in the readme file.");
 		for(int i=0;i<nClauses;i++)
 		{
-			String literalsList = in.nextLine();
+			String literalsList = in.readLine();
 			String[] literals = literalsList.split(" ");
 			Clause clause = new Clause();
 			for(int i1=0;i1<literals.length;i1++)
